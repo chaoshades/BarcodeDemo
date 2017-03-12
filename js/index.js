@@ -54,7 +54,7 @@ var app = {
     scan: function() {
         console.log('scanning');
         
-        var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+        var scanner = cordova.require("phonegap-plugin-barcodescanner.BarcodeScanner");
 
         scanner.scan( function (result) { 
 
@@ -81,7 +81,7 @@ var app = {
     },
 
     encode: function() {
-        var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+        var scanner = cordova.require("phonegap-plugin-barcodescanner.BarcodeScanner");
 
         scanner.encode(scanner.Encode.TEXT_TYPE, "http://www.nhl.com", function(success) {
             alert("encode success: " + success);
