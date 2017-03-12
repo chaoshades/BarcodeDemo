@@ -13,6 +13,8 @@
         PhoneGap Team
     </author>
 
+    <!-- Needed to open links in the demo -->
+    <plugin name="cordova-plugin-inappbrowser" />
     <plugin spec="https://github.com/phonegap/phonegap-plugin-barcodescanner" source="git" />
 
     <feature name="http://api.phonegap.com/1.0/device" />
