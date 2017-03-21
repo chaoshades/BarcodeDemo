@@ -77,11 +77,7 @@ var app = {
 
         }, function (error) { 
             console.log("Scanning failed: ", error); 
-        },
-        {
-          resultDisplayDuration: 0, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-          formats : "QR_CODE", // default: all but PDF_417 and RSS_EXPANDED
-        });
+        } );
     },
 
     encode: function() {
